@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style>
+        /* Paste your CSS code here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+        }
+
+        .warning {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+        }
+
+        .menu li {
+            background-color: #e9ecef;
+            padding: 8px;
+            margin: 5px 0;
+            list-style-type: none;
+        }
+
+        .menu li li {
+            background-color: #f8f9fa;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: inline-block;
+            margin: 5px;
+            border: 1px solid transparent;
+        }
+
+        .links a:hover {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        button[type="button"] {
+            background-color: #ffc107;
+            color: #212529;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        button[type="button"]:hover {
+            background-color: #e0a800;
+        }
+
+        h4, h5, h6 {
+            color: #fd7e14;
+            font-family: Georgia, serif;
+            margin: 15px 0 5px 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container::before {
+            content: " 🧑‍💻 ";
+            font-size: 20px;
+        }
+
+        .warning::after {
+            content: " ⚠️";
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the CSS Example</h1>
+    <p class="highlight">This paragraph has a highlight class applied.</p>
+    <p class="warning">This is a warning message.</p>
+
+    <ul class="menu">
+        <li>Menu Item 1</li>
+        <li>
+            Menu Item 2
+            <ul>
+                <li>Submenu Item 1</li>
+                <li>Submenu Item 2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="links">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+    </div>
+
+    <button type="button">Click Me!</button>
+</body>
+</html>
